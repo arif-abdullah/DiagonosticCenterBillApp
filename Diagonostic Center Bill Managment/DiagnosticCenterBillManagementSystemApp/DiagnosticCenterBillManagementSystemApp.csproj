@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CFE7D42-0AB8-45C2-AF0B-AAFB5BE0FC18}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DiagnosticCenterBillManagementSystemApp</RootNamespace>
+    <AssemblyName>DiagnosticCenterBillManagementSystemApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\DOLPHIN\Music\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\utms-logo-header.png" />
+    <Content Include="UI\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="UI\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="UI\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="UI\assets\fonts\FontAwesome.otf" />
+    <Content Include="UI\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="UI\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="UI\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="UI\assets\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\Equipment1.jpg" />
+    <Content Include="images\Equipment2.jpg" />
+    <Content Include="images\Equipment3.jpg" />
+    <Content Include="images\Equipment4.jpg" />
+    <Content Include="images\Header.jpg" />
+    <Content Include="images\Logo.JPG" />
+    <Content Include="UI\assets\css\bootstrap.css" />
+    <Content Include="UI\assets\css\custom.css" />
+    <Content Include="UI\assets\css\font-awesome.css" />
+    <Content Include="UI\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="UI\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="UI\assets\img\logo.png" />
+    <Content Include="UI\assets\js\bootstrap.min.js" />
+    <Content Include="UI\assets\js\custom.js" />
+    <Content Include="UI\assets\js\jquery-1.10.2.js" />
+    <Content Include="UI\indexUI.aspx" />
+    <Content Include="UI\PaymentUI.aspx" />
+    <Content Include="UI\Scripts\calendar-en.min.js" />
+    <None Include="UI\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="UI\Scripts\jquery-1.4.1.js" />
+    <Content Include="UI\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="UI\Scripts\jquery.dynDateTime.min.js" />
+    <Content Include="UI\Style\calendar-blue.css" />
+    <Content Include="UI\Style\main.css" />
+    <Content Include="UI\TestRequestUI.aspx" />
+    <Content Include="UI\TestSetupUI.aspx" />
+    <Content Include="UI\TestWiseReportUI.aspx" />
+    <Content Include="UI\TypeSetupUI.aspx" />
+    <Content Include="UI\TypeWiseReportUI.aspx" />
+    <Content Include="UI\UnpaidBillReportUI.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BillManager.cs" />
+    <Compile Include="BLL\PatientManager.cs" />
+    <Compile Include="BLL\ReqDManager.cs" />
+    <Compile Include="BLL\ReqMManager.cs" />
+    <Compile Include="BLL\TestSetupManager.cs" />
+    <Compile Include="BLL\TestWishReportManager.cs" />
+    <Compile Include="BLL\TypeSetupManager.cs" />
+    <Compile Include="BLL\TypeWiseReportManager.cs" />
+    <Compile Include="BLL\UnpaidBillReportManager.cs" />
+    <Compile Include="DAL\Gateway\BillGateWay.cs" />
+    <Compile Include="DAL\Gateway\ReqDGateWay.cs" />
+    <Compile Include="DAL\Gateway\ReqMGateWay.cs" />
+    <Compile Include="DAL\Gateway\TestSetupGateway.cs" />
+    <Compile Include="DAL\Gateway\TestWiseReportGateway.cs" />
+    <Compile Include="DAL\Gateway\TypeSetupGateway.cs" />
+    <Compile Include="DAL\Gateway\TypeWiseReportGateway.cs" />
+    <Compile Include="DAL\Gateway\UnpaidBillReportGateway.cs" />
+    <Compile Include="DAL\Model\Bill.cs" />
+    <Compile Include="DAL\Model\BillInfo.cs" />
+    <Compile Include="DAL\Model\Patient.cs" />
+    <Compile Include="DAL\Model\TestReqD.cs" />
+    <Compile Include="DAL\Model\TestReqM.cs" />
+    <Compile Include="DAL\Model\TestSetup.cs" />
+    <Compile Include="DAL\Model\TestWiseReportView.cs" />
+    <Compile Include="DAL\Model\TypeWiseReportView.cs" />
+    <Compile Include="DAL\Model\UnpaidBillReportView.cs" />
+    <Compile Include="DAL\Model\ViewTestList.cs" />
+    <Compile Include="images\TestWithType.cs" />
+    <Compile Include="DAL\Model\TypeSetup.cs" />
+    <Compile Include="DAL\Gateway\PatientGateWay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\indexUI.aspx.cs">
+      <DependentUpon>indexUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\indexUI.aspx.designer.cs">
+      <DependentUpon>indexUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PaymentUI.aspx.cs">
+      <DependentUpon>PaymentUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PaymentUI.aspx.designer.cs">
+      <DependentUpon>PaymentUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestRequestUI.aspx.cs">
+      <DependentUpon>TestRequestUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TestRequestUI.aspx.designer.cs">
+      <DependentUpon>TestRequestUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestSetupUI.aspx.cs">
+      <DependentUpon>TestSetupUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TestSetupUI.aspx.designer.cs">
+      <DependentUpon>TestSetupUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestWiseReportUI.aspx.cs">
+      <DependentUpon>TestWiseReportUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TestWiseReportUI.aspx.designer.cs">
+      <DependentUpon>TestWiseReportUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TypeSetupUI.aspx.cs">
+      <DependentUpon>TypeSetupUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TypeSetupUI.aspx.designer.cs">
+      <DependentUpon>TypeSetupUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TypeWiseReportUI.aspx.cs">
+      <DependentUpon>TypeWiseReportUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TypeWiseReportUI.aspx.designer.cs">
+      <DependentUpon>TypeWiseReportUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UnpaidBillReportUI.aspx.cs">
+      <DependentUpon>UnpaidBillReportUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UnpaidBillReportUI.aspx.designer.cs">
+      <DependentUpon>UnpaidBillReportUI.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pdf\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39206</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:39206/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
